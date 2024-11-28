@@ -1,0 +1,4 @@
+{
+  "fern.vim": { "branch": "main", "commit": "95218a9eeb5bf25ff30196b8700eeb64b8f3aeba" },
+  "lazy.nvim": { "branch": "main", "commit": "7967abe55752aa90532e6bb4bd4663fe27a264cb" }
+}
