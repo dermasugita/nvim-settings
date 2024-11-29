@@ -1,3 +1,5 @@
+-- Map <leader> to ,
+vim.g.mapleader = "\\"
 -- Map jj to <ESC>
 vim.keymap.set('i', 'jj', '<ESC>')
 
