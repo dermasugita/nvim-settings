@@ -11,6 +11,30 @@
 - jj to <Esc>
 
 ### Terminal Mode
-- <Option-k> to <Ctrl-\><Ctrl-n><Ctrl-w>k # to the upper window
-- <Option-h> to <Ctrl-\><Ctrl-n><Ctrl-w>h # to the left window
-- <Option-n> to <Ctrl-\><Ctrl-n> # to terminal normal mode
+- jj to <C-\><C-n> # to Terminal-Normal mode
+
+## Custom Commands
+
+- `Term`: Open terminal below.
+- `TR <number>`: Change height of the current terminal.
+
+
+## Plugins and Relating Settings
+
+### Lualine
+- Nicer status bar
+- It depends on `nvim-tree/nvim-web-devicons`
+- Required `brew install font-hack-nerd-font` and change terminal font to it.
+
+### Fern
+- File explorer
+- The lualine is disabled while in the fern.
+- Press `a` to select action.
+- Press `?` for help window.
+
+Useful commands:
+- s or open:select
+- open:right
+- l or replace most left file buffer
+
+### ToggleTerm
