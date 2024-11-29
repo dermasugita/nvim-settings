@@ -15,10 +15,4 @@ vim.api.nvim_create_autocmd({"VimEnter"}, {
 
 vim.cmd("language en_US")
 
-vim.api.nvim_create_autocmd({"TermEnter"}, {
-  pattern = {"*"},
-  once=true,
-  command = [[
-    horizontal resize 15
-  ]]
 })
