@@ -13,6 +13,7 @@ vim.api.nvim_create_autocmd({"VimEnter"}, {
   nested = true,
 })
 
+vim.cmd("language en_US")
 
 vim.api.nvim_create_autocmd({"TermEnter"}, {
   pattern = {"*"},
