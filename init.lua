@@ -4,11 +4,12 @@ require('keymaps')
 
 vim.api.nvim_create_autocmd({"VimEnter"}, {
   pattern = {"*"},
-  command = [[
-    Fern . -drawer
-    winc l
-    bel term
-  ]],
+  callback = function()
+    setTerminal()
+    vim.cmd('winc k')
+    vim.cmd('Fern . -drawer')
+    vim.api.nvim_feedkeys('jj', 'm', false)
+  end,
   nested = true,
 })
 
