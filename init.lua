@@ -13,10 +13,6 @@ vim.api.nvim_create_autocmd({"VimEnter"}, {
   nested = true,
 })
 
-vim.api.nvim_create_autocmd({"TermOpen"}, {
-  pattern = {"*"},
-  command= "startinsert",
-})
 
 vim.api.nvim_create_autocmd({"TermEnter"}, {
   pattern = {"*"},
