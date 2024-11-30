@@ -3,6 +3,9 @@ vim.g.mapleader = "\\"
 -- Map jj to <ESC>
 vim.keymap.set('i', 'jj', '<ESC>')
 
+-- Map <c-h> to 1<c-w>w
+vim.keymap.set('n', '<C-h>', '1<C-w>w')
+
 
 -- Terminal Window Change
 

@@ -7,6 +7,9 @@
 - ~/.config/nvim
 
 ## Key Binds
+### Normal Mode
+- <C-h> to moving into fern window(1<C-w>w)
+
 ### Insert Mode
 - jj to <Esc>
 
