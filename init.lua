@@ -3,6 +3,7 @@ require('options')
 require('keymaps')
 require('userCommands')
 require('utils')
+require('masonConfig')
 require('lualine').setup {extensions = {'fern'}}
 
 vim.api.nvim_create_autocmd({"VimEnter"}, {
