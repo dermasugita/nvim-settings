@@ -5,6 +5,9 @@ require('userCommands')
 require('utils')
 require('masonConfig')
 require('lintConfig')
+require('highlight')
+require('telescope')
+require('completion')
 require('lualine').setup {extensions = {'fern'}}
 
 vim.api.nvim_create_autocmd({"VimEnter"}, {

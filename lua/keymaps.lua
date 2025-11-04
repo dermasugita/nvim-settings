@@ -25,3 +25,8 @@ end
 
 vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
 
+-- Code action of Lspsaga
+vim.keymap.set("n", "ga", "<cmd>Lspsaga code_action<CR>")
+
+-- Jump to definition of Lspsaga
+vim.keymap.set("n", "gs", "<cmd>Lspsaga goto_definition<CR>")

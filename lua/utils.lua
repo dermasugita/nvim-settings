@@ -36,3 +36,26 @@ function uuid()
     return string.format('%x', (c == 'R') and math.random(0, 0xf) or math.random(8, 0xb))
   end)
 end
+
+function find_biome_root(file_path)
+    -- Extract the directory from the file path
+    local current_dir = vim.fn.fnamemodify(file_path, ":p:h")
+
+    while current_dir do
+        -- Use shell command to check for package.json
+        local biome_json_path = current_dir .. "/biome.json"
+        local exists = vim.fn.system("test -f " .. biome_json_path .. " && echo 'exists' || echo ''")
+
+        if vim.trim(exists) == "exists" then
+            return current_dir
+        end
+
+        -- Move to parent directory
+        local parent_dir = current_dir:match("(.+)/[^/]+$")
+        if not parent_dir or parent_dir == current_dir then
+            -- Root directory reached
+            return nil
+        end
+        current_dir = parent_dir
+    end
+end
