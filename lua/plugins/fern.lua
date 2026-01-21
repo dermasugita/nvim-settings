@@ -1,1 +1,0 @@
-return {"lambdalisue/fern.vim"}

@@ -10,7 +10,7 @@ require('lspconfig').biome.setup({
 })
 
 
-require('lspconfig').tsserver.setup({
+require('lspconfig').ts_ls.setup({
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
   cmd = { "npx", "typescript-language-server", "--stdio" }
 })
