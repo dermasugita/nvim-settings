@@ -7,7 +7,8 @@ require('lintConfig')
 require('highlight')
 require('telescope')
 require('completion')
-
-
-vim.cmd("language en_US")
-
+require('vfiler/config').setup {
+  options = {
+    show_hidden_files = true
+  }
+}
