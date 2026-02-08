@@ -11,7 +11,6 @@ local bjsfn = function()
 end
 bjs.cmd = bjsfn
 require('lint').linters_by_ft = {
-  markdown = {'markdownlint'},
   typescript = {'biomejs'},
   javascript = {'biomejs'},
   typescriptreact = {'biomejs'},
@@ -38,20 +37,6 @@ require("formatter").setup({
       biomeFormatter,
     },
     typescriptreact = {biomeFormatter},
-    markdown = {
-      function ()
-	local filePath = util.get_current_buffer_file_path()
-	local cwd = vim.fn.getcwd()
-	local outTmpPath = cwd .. "/" .. uuid() .. ".md"
-	copyFile(filePath, outTmpPath)
-	os.execute("markdownlint --fix " .. outTmpPath)
-	return {
-	  --exe = "tmpStr=$(cat " .. outTmpPath .. ") && rm " .. outTmpPath .. " && echo $tmpStr",
-	  exe = "cat " .. outTmpPath .. " && rm " .. outTmpPath,
-	  stdin = true,
-	}
-      end
-    },
   },
 })
 --vim.api.nvim_create_augroup(
