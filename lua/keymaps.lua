@@ -30,3 +30,6 @@ vim.keymap.set("n", "ga", "<cmd>Lspsaga code_action<CR>")
 
 -- Jump to definition of Lspsaga
 vim.keymap.set("n", "gs", "<cmd>Lspsaga goto_definition<CR>")
+
+-- DiffView
+vim.keymap.set("n", "<leader>hd", "<cmd>DiffviewOpen origin/main...HEAD<CR>")
