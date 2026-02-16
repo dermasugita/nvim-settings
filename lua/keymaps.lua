@@ -30,3 +30,5 @@ vim.keymap.set("n", "ga", "<cmd>Lspsaga code_action<CR>")
 
 -- Jump to definition of Lspsaga
 vim.keymap.set("n", "gs", "<cmd>Lspsaga goto_definition<CR>")
+
+vim.keymap.set("n", "K", vim.lsp.buf.hover)
