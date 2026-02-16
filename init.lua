@@ -7,8 +7,4 @@ require('lintConfig')
 require('highlight')
 require('telescope')
 require('completion')
-require('vfiler/config').setup {
-  options = {
-    show_hidden_files = true
-  }
-}
+require('oil').setup()

@@ -1,3 +1,0 @@
-return {
-  'obaland/vfiler.vim'
-}

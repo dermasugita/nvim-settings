@@ -32,3 +32,7 @@ vim.keymap.set("n", "ga", "<cmd>Lspsaga code_action<CR>")
 vim.keymap.set("n", "gs", "<cmd>Lspsaga goto_definition<CR>")
 
 vim.keymap.set("n", "K", vim.lsp.buf.hover)
+vim.keymap.set("n", "-", "<cmd>Oil<CR>")
+vim.keymap.set("n", "<leader>t", "<cmd>Neotree toggle<CR>")
+-- DiffView
+vim.keymap.set("n", "<leader>hd", "<cmd>DiffviewOpen origin/main...HEAD<CR>")
